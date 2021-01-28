@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible">
+        <title>Expense Tracker</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div class="container">     <!--App container-->
+            <h3>Expenses Tracker</h3>
+            <h6>YOUR BALANCE</h6>
+            <h2 id="balance_text">Rs 0.00</h2>
+            <div class="row">       <!--income and expense cards-->
+                <div class="column">
+                  <div class="card">
+                    <h3>INCOME</h3>
+                    <p id="income_text">Rs 0.00</p>
+                  </div>
+                </div>
+              
+                <div class="column">
+                  <div class="card">
+                    <h3>EXPENSE</h3>
+                    <p id="expense_text">Rs 0.00</p>
+                  </div>
+                </div>
+            </div>
+            <h4 class="history">History</h4> <hr>   <!--History of transactions-->
+            <div id="history_lists">
+            </div>
+            <h4 class="transaction">Add new transaction</h4> <hr>
+            <label>Text</label> <br>
+            <input id="task" placeholder="Enter text"> <br>
+            <label>Amount</label> <br>
+            <small>(negative-expense,positive-income)</small> <br>
+            <input id="amount" placeholder="Enter amount"> <br>
+            <button type="submit" id="submit">Add transaction</button>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
